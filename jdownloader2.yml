@@ -59,7 +59,7 @@
           traefik.port: '{{intport}}'
 
           traefik.frontend.rule: 'Host:{{pgrole}}.{{domain.stdout}},{{tldset}}'
-'      
+
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
